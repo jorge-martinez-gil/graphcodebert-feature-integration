@@ -2,7 +2,7 @@
 # Improving Source Code Similarity Detection with GraphCodeBERT and Additional Feature Integration
 This repository contains the implementation of a novel approach for source code similarity detection that integrates an additional output feature into the classification process to enhance model performance. The approach is based on the GraphCodeBERT model, which has been extended with a custom output feature layer and a concatenation mechanism to improve feature representation. The model has been trained and evaluated on the IR-Plag dataset, demonstrating significant improvements in precision, recall, and f-measure. The full implementation, including model architecture, training strategies, and evaluation metrics, is available in this repository.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2405.02095-b31b1b.svg)](https://arxiv.org/abs/2405.02095)
+[![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
 
 
 ## 🌍 Introduction
@@ -48,11 +48,11 @@ The table below summarizes the performance of various approaches:
 If you use this work, please cite:
 
 ```
-@misc{martinezgil2024advanced,
-      title={Advanced Detection of Source Code Clones via an Ensemble of Unsupervised Similarity Measures}, 
+@misc{martinezgil2024graphcodebert,
+      title={Improving Source Code Similarity Detection Through GraphCodeBERT and Integration of Additional Features}, 
       author={Jorge Martinez-Gil},
       year={2024},
-      eprint={2405.02095},
+      eprint={2408.08903},
       archivePrefix={arXiv},
       primaryClass={cs.SE}
 }

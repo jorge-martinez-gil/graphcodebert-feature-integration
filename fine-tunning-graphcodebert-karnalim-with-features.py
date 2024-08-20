@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-[Martinez-Gil2024c] Improving Source Code Similarity Detection with GraphCodeBERT and Additional Feature Integration, arXiv preprint arXiv:xxxx.xxxxx, 2024
+[Martinez-Gil2024d] Improving Source Code Similarity Detection with GraphCodeBERT and Additional Feature Integration, arXiv preprint arXiv:2408.08903, 2024
 
 @author: Jorge Martinez-Gil
 """
