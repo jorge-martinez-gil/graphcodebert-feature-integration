@@ -12,7 +12,8 @@ In this project, we extend the capabilities of GraphCodeBERT—a transformer mod
 
 ### Repository Contents
 
-- `graphcodebert_fint.ipynb`: Jupyter Notebook that includes the full implementation of the model, from data loading and preprocessing to training, evaluation, and results interpretation. Detailed comments and documentation are provided within the notebook.
+- `graphcodebert_fint.ipynb`: Jupyter Notebook that includes the full implementation of the model, from data loading and preprocessing to training, evaluation, and results interpretation. Detailed comments and documentation are provided within the notebook. It is optimized to be used in Google Colab since the use of a GPU is highly recommended.
+- `fine-tunning-graphcodebert-karnalim-with-features.py`: The source code in the form of a standard python app.
 
 
 ## 🛠️ Methodology
@@ -24,7 +25,7 @@ The model is an extension of GraphCodeBERT, which is a transformer-based model p
 We utilize the IR-Plag dataset, which is specifically designed for benchmarking source code similarity detection techniques, particularly in academic plagiarism contexts. The dataset contains 467 code files, with 355 labeled as plagiarized. The diversity in coding styles and structures within this dataset makes it ideal for evaluating the effectiveness of our model.
 
 ### Training and Evaluation
-The model was trained using PyTorch and the Hugging Face Transformers library. The training process included random splits of the dataset into training, validation, and test sets. Key metrics such as precision, recall, and f-measure were computed to evaluate the model's performance. The notebook documents the training arguments, including batch size, number of epochs, and learning rate adjustments.
+The training process included random splits of the dataset into training, validation, and test sets. Key metrics such as precision, recall, and f-measure were computed to evaluate the model's performance. The notebook documents the training arguments, including batch size, number of epochs, and learning rate adjustments.
 
 
 ## 📈  Results
