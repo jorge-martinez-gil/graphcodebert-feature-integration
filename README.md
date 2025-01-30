@@ -3,7 +3,8 @@
 This repository contains the implementation of a novel approach for source code similarity detection that integrates an additional output feature into the classification process to enhance model performance. The approach is based on the **GraphCodeBERT** model, which has been extended with a custom output feature layer and a concatenation mechanism to improve feature representation. The model has been trained and evaluated on the **IR-Plag dataset**, demonstrating significant improvements in precision, recall, and f-measure. The full implementation, including model architecture, training strategies, and evaluation metrics, is available in this repository.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Citations](https://img.shields.io/badge/citations-1-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
 
 ---
 
