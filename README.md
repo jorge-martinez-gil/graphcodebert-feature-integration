@@ -68,9 +68,15 @@ If you use this work, please cite:
       primaryClass={cs.SE}
 }
 ```
+---
+### Research that has cited this work
+
+1. **[SWE-Fixer: Training Open-Source LLMs for Effective and Efficient GitHub Issue Resolution](https://arxiv.org/pdf/2501.05040)**
+   - **Authors:** C. Xie, B. Li, C. Gao, H. Du, W. Lam, D. Zou
+   - **Journal:** *arXiv preprint arXiv:2025*
+   - **Abstract:** Large Language Models (LLMs) have shown exceptional proficiency in various complex tasks. This study explores the application of open-source LLMs in addressing software engineering challenges, particularly for resolving GitHub issues efficiently.
 
 ---
-
 ## 📄 License
 
 This project is licensed under the MIT License. 
