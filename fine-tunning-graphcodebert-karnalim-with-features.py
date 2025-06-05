@@ -126,7 +126,7 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained('microsoft/graphcodebert-base')
     
     # Path to the dataset file
-    dataset_path = 'data\data2.json'  # Your dataset path
+    dataset_path = 'data/data2.json'  # Path to the dataset file
     
     # Load the dataset
     full_dataset = CodePairDataset(file_path=dataset_path, tokenizer=tokenizer)
