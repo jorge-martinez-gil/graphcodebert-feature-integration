@@ -4,7 +4,7 @@ This repository contains the implementation of a novel approach for source code 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-[![Citations](https://img.shields.io/badge/citations-1-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
+[![Citations](https://img.shields.io/badge/citations-2-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
 
 ---
 
