@@ -4,7 +4,7 @@ This repository contains the implementation of a novel approach for source code 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-[![Citations](https://img.shields.io/badge/citations-2-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
+[![Citations](https://img.shields.io/badge/citations-3-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
 
 ---
 
@@ -75,6 +75,11 @@ If you use this work, please cite:
    - **Authors:** C. Xie, B. Li, C. Gao, H. Du, W. Lam, D. Zou
    - **Journal:** *arXiv preprint arXiv:2025*
    - **Abstract:** Large Language Models (LLMs) have shown exceptional proficiency in various complex tasks. This study explores the application of open-source LLMs in addressing software engineering challenges, particularly for resolving GitHub issues efficiently.
+2. **[Natural Language Summarization Enables Multi-Repository Bug Localization by LLMs in Microservice Architectures](https://arxiv.org/abs/)**
+   - **Authors:** A. R. Oskooei, S. S. Yukcu, M. C. Bozoglan, …
+   - **Journal:** *arXiv preprint arXiv:2025*
+   - **Abstract:** The study examines how natural language summarization can support LLM-based bug localization across multiple repositories in microservice systems. It focuses on linking bug reports to the correct service despite fragmented codebases and limited LLM input capacity, using summarization to reduce the search space and improve localization accuracy.
+
 
 ---
 ## 📄 License
