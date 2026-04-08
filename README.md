@@ -4,7 +4,7 @@ This repository contains the implementation of a novel approach for source code 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-[![Citations](https://img.shields.io/badge/citations-3-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
+[![Citations](https://img.shields.io/badge/citations-4-blue)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jorge-martinez-gil/colab-notebooks/blob/main/GraphCodeBERT%2BFeatures.ipynb)
 
 ---
