@@ -56,23 +56,6 @@ graphcodebert-feature-integration/
 
 The model extends **GraphCodeBERT** — a transformer pre-trained on code corpora that captures both the **textual semantics** and **structural (data-flow graph) properties** of source code. Our key contribution is the integration of an **additional output feature** into the binary classification head, enriching the representation used for similarity judgement.
 
-```
-Input Code Pair
-      │
-      ▼
-┌─────────────────┐
-│  GraphCodeBERT  │  ← Pre-trained transformer (textual + structural)
-└────────┬────────┘
-         │  [CLS] embedding
-         ▼
-┌─────────────────────────────┐
-│  Classifier Head            │
-│  [CLS] + Additional Feature │  ← Our contribution
-└───��────────┬────────────────┘
-             │
-             ▼
-      Similarity Score
-```
 
 ### Dataset
 
@@ -169,7 +152,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-Made with ❤️ by [Jorge Martinez-Gil](https://github.com/jorge-martinez-gil)
+Made by [Jorge Martinez-Gil](https://github.com/jorge-martinez-gil)
 
 ⭐ *If you find this work useful, please consider giving it a star!*
 
