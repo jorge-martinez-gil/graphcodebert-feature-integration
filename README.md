@@ -5,10 +5,8 @@
 
 *A novel approach that pushes code clone detection to near-perfect accuracy*
 
-[![arXiv](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2408.08903)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jorge-martinez-gil/colab-notebooks/blob/main/GraphCodeBERT%2BFeatures.ipynb)
-[![Citations](https://img.shields.io/badge/Citations-4-blue?style=for-the-badge&logo=google-scholar)](https://scholar.google.com/citations?view_op=view_citation&hl=en&citation_for_view=X1pRUYcAAAAJ:DOLguN9Lh8sC)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
@@ -33,7 +31,6 @@ Accurate detection of similar source code fragments is a cornerstone of software
 | 📊 **Dataset** | IR-Plag — academic plagiarism benchmark |
 | 📈 **Best F-Measure** | **0.99** (Precision: 0.98 · Recall: 1.00) |
 | 💻 **Languages** | Python · Jupyter Notebook |
-| 📄 **Paper** | [arXiv:2408.08903](https://arxiv.org/abs/2408.08903) |
 
 ---
 
