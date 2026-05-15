@@ -131,12 +131,3 @@ python fine-tunning-graphcodebert-karnalim-with-features.py
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
----
-
-<div align="center">
-
-Made by [Jorge Martinez-Gil](https://github.com/jorge-martinez-gil)
-
-⭐ *If you find this work useful, please consider giving it a star!*
-
-</div>
