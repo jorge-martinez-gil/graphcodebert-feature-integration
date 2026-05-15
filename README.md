@@ -108,23 +108,6 @@ python fine-tunning-graphcodebert-karnalim-with-features.py
 
 ---
 
-## 📚 Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@misc{martinezgil2024graphcodebert,
-  title   = {Improving Source Code Similarity Detection Through GraphCodeBERT and Integration of Additional Features},
-  author  = {Jorge Martinez-Gil},
-  year    = {2024},
-  eprint  = {2408.08903},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.SE}
-}
-```
-
----
-
 ## 🔬 Works That Cite This Paper
 
 <details>
