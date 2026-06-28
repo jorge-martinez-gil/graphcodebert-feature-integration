@@ -1,0 +1,24 @@
+# Neural reproduction of the paper: GraphCodeBERT + engineered features, fused in
+# the classification head. Requires the neural extra:  pip install 'featfuse[neural]'
+# and (realistically) a GPU. Reproduces arXiv:2408.08903.
+name: graphcodebert_irplag
+seed: 42
+output_dir: runs
+features:
+  - exec_output_similarity     # the paper's single additional feature
+data:
+  name: irplag
+  root: data
+  single_file: data2.json
+  split_fractions: [0.8, 0.1, 0.1]
+model:
+  backend: neural
+  encoder: microsoft/graphcodebert-base
+  fusion: concat               # the paper's fusion; try gated / attention / residual / film
+  max_length: 512
+  epochs: 3
+  batch_size: 8
+  learning_rate: 2.0e-5
+eval:
+  bootstrap_samples: 1000
+  primary_metric: f1

@@ -1,0 +1,17 @@
+name: Bug report
+description: Report a problem with FeatFuse
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: Describe the bug and what you expected. }
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes: { label: Reproduction, description: Command/config and steps. Paste the manifest.json if available. }
+  - type: input
+    id: version
+    attributes: { label: FeatFuse version, placeholder: "0.2.0" }
+  - type: textarea
+    id: env
+    attributes: { label: Environment, description: OS, Python, torch/transformers versions. }

@@ -1,0 +1,21 @@
+# Fast CPU smoke configuration — no GPU, no network, no JDK required.
+# Used by CI and the quickstart to validate the whole pipeline end to end.
+name: smoke
+seed: 42
+output_dir: runs
+features:
+  - exec_output_similarity   # uses the precomputed value shipped in data2.json
+  - token_jaccard
+  - edit_ratio
+  - cyclomatic_ratio
+data:
+  name: irplag
+  root: data
+  single_file: data2.json
+  split_fractions: [0.7, 0.15, 0.15]
+model:
+  backend: classical
+  classifier: gradient_boosting
+eval:
+  bootstrap_samples: 200
+  primary_metric: f1

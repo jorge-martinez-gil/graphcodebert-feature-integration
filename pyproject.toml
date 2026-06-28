@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "featfuse"
+version = "0.2.0"
+description = "An open benchmark for feature integration in pretrained code language models (GraphCodeBERT, CodeBERT, UniXcoder, ...)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Jorge Martinez-Gil" }]
+keywords = [
+  "graphcodebert", "codebert", "unixcoder", "code language models",
+  "feature integration", "feature fusion", "code clone detection",
+  "code similarity", "code representation learning", "code embeddings",
+  "software engineering", "benchmark", "code intelligence",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.21",
+  "scipy>=1.7",
+  "scikit-learn>=1.0",
+  "pandas>=1.3",
+  "matplotlib>=3.4",
+  "pyyaml>=5.4",
+]
+
+[project.optional-dependencies]
+neural = ["torch>=1.12", "transformers>=4.20"]
+dev = ["pytest>=7.0", "pytest-cov"]
+docs = ["jupyter", "nbconvert"]
+
+[project.urls]
+Homepage = "https://github.com/jorge-martinez-gil/graphcodebert-feature-integration"
+Paper = "https://arxiv.org/abs/2408.08903"
+Issues = "https://github.com/jorge-martinez-gil/graphcodebert-feature-integration/issues"
+
+[project.scripts]
+featfuse = "featfuse.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

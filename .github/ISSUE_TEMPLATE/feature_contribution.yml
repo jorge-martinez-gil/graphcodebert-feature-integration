@@ -1,0 +1,17 @@
+name: New feature / fusion / model / dataset
+description: Propose a new engineered feature, fusion strategy, encoder, or dataset
+labels: [enhancement, plugin]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Plugin kind
+      options: [engineered feature, fusion strategy, code model/encoder, dataset, task/metric]
+    validations: { required: true }
+  - type: textarea
+    id: motivation
+    attributes: { label: Motivation, description: What scientific question does this enable? Any reference? }
+    validations: { required: true }
+  - type: textarea
+    id: design
+    attributes: { label: Proposed design, description: Sketch the class/registry name and inputs/outputs. }

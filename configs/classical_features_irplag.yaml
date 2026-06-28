@@ -1,0 +1,33 @@
+# Reproducible engineered-feature baseline on IR-Plag (runs anywhere).
+# This is the honest, GPU-free baseline: all engineered features -> a classifier.
+# It does NOT reproduce the neural GraphCodeBERT+feature result (see the neural
+# config for that); it characterises how far the engineered features go on their own.
+name: classical_features_irplag
+seed: 42
+output_dir: runs
+features:
+  - exec_output_similarity
+  - token_jaccard
+  - char_ngram_jaccard
+  - edit_ratio
+  - length_ratio
+  - identifier_jaccard
+  - nesting_depth_ratio
+  - cyclomatic_ratio
+  - line_count_ratio
+  - keyword_jaccard
+  - unique_identifier_ratio
+data:
+  name: irplag
+  root: data
+  train: training.json
+  validation: validation.json
+  test: test.json
+  single_file: data2.json      # used only to enrich splits with the exec feature
+model:
+  backend: classical
+  classifier: gradient_boosting
+eval:
+  bootstrap_samples: 1000
+  confidence: 0.95
+  primary_metric: f1

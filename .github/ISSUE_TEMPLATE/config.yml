@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Paper (arXiv:2408.08903)
+    url: https://arxiv.org/abs/2408.08903
+    about: Read the paper this benchmark accompanies.

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use FeatFuse or this benchmark in your research, please cite the paper below."
+title: "FeatFuse: An Open Benchmark for Feature Integration in Code Language Models"
+abstract: >-
+  Research infrastructure for studying how engineered features (lexical, structural,
+  execution-based) complement pretrained code language models such as GraphCodeBERT,
+  CodeBERT and UniXcoder, with reproducible benchmarks, ablation studies, statistical
+  significance testing and automatic report generation.
+type: software
+authors:
+  - family-names: Martinez-Gil
+    given-names: Jorge
+repository-code: "https://github.com/jorge-martinez-gil/graphcodebert-feature-integration"
+license: MIT
+version: "0.2.0"
+keywords:
+  - GraphCodeBERT
+  - feature integration
+  - feature fusion
+  - code clone detection
+  - code representation learning
+  - code language models
+  - benchmark
+preferred-citation:
+  type: article
+  title: "Improving Source Code Similarity Detection Through GraphCodeBERT and Integration of Additional Features"
+  authors:
+    - family-names: Martinez-Gil
+      given-names: Jorge
+  year: 2024
+  journal: "arXiv preprint"
+  url: "https://arxiv.org/abs/2408.08903"
+  identifiers:
+    - type: other
+      value: "arXiv:2408.08903"
+      description: "arXiv identifier"
