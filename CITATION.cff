@@ -30,7 +30,11 @@ preferred-citation:
   year: 2024
   journal: "arXiv preprint"
   url: "https://arxiv.org/abs/2408.08903"
+  doi: "10.48550/arXiv.2408.08903"
   identifiers:
+    - type: doi
+      value: "10.48550/arXiv.2408.08903"
+      description: "arXiv DOI"
     - type: other
       value: "arXiv:2408.08903"
       description: "arXiv identifier"

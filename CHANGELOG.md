@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/) and the project aims to follow
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+- `featfuse cite [--software]` command printing canonical BibTeX (single source
+  of truth in `featfuse.citation`).
+- Auto-generated `REPORT.md` now ends with a "How to cite" BibTeX block, and
+  generated LaTeX tables carry a citation comment header — every artifact copied
+  into a paper travels with its reference.
+- README: benchmark-positioning table, FAQ, expanded Citation section (including
+  the journal-published follow-up, doi:10.1142/S0218194025500160).
+- `docs/citation_playbook.md` — external discoverability checklist (Zenodo DOI,
+  Papers with Code, GitHub topics, …).
+- `CITATION.cff`: arXiv DOI (10.48550/arXiv.2408.08903).
+
 ## [0.2.0] — Research infrastructure release
 
 Turns the single-paper script into a reusable, extensible benchmark platform.

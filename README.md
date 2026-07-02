@@ -10,6 +10,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Paper](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
+[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue.svg)](#citation)
+
+**Using FeatFuse in a paper?** → [Citation](#citation), or run `featfuse cite`.
 
 </div>
 
@@ -48,6 +51,17 @@ Engineered features are fused with the transformer's pooled embedding before cla
 | `film` | feature-wise linear modulation (scale & shift) of the embedding | `E` |
 
 Whether a given feature + fusion combination helps is an **empirical question** — so FeatFuse answers it with ablations, feature-importance analysis, and significance testing instead of claims.
+
+## How is this different from existing benchmarks?
+
+| | CodeXGLUE / GLUE-style suites | Clone datasets (BigCloneBench, POJ-104, IR-Plag) | **FeatFuse** |
+|---|---|---|---|
+| Unit of comparison | model vs. model | dataset only | **feature + fusion + model combination** |
+| Question answered | which pretrained model is best? | is this pair a clone? | **does *this engineered signal* help *this encoder*, and is the gain significant?** |
+| Statistical testing | rarely reported | n/a | built-in (bootstrap CIs, McNemar, paired bootstrap) |
+| Ablations / importance | manual | n/a | one flag (`--ablate`, `importance`) |
+
+FeatFuse is complementary: it *consumes* clone datasets and *wraps* pretrained encoders, isolating the contribution of engineered features — a question the model-centric suites don't ask. If your paper reports a feature-augmented code model, FeatFuse gives you the baseline, the significance test, and the LaTeX table.
 
 ---
 
@@ -152,9 +166,25 @@ Threshold metrics (accuracy, balanced accuracy, precision, recall, F1, MCC), ran
 
 ---
 
+## FAQ
+
+**Does hand-crafted feature engineering still matter in the era of large code models?**
+That's exactly the question FeatFuse is built to answer empirically, per feature and per encoder, with significance tests. The paper's result — a cheap execution-derived signal lifting GraphCodeBERT from 0.96 to 0.99 F1 on IR-Plag — suggests the answer is not trivially "no".
+
+**Do I need a GPU?**
+No. The `smoke` and `classical_features_irplag` configs run on any CPU in seconds. GPUs are only needed to reproduce the neural fine-tuning results.
+
+**Which models can I plug in?**
+Any HuggingFace encoder. GraphCodeBERT, CodeBERT and UniXcoder work out of the box; CodeT5, StarCoder, Qwen-Coder and DeepSeek-Coder follow the same one-line registration pattern.
+
+**Can I use FeatFuse for plagiarism detection / clone detection in my own dataset?**
+Yes — register a dataset loader (see [docs/adding_a_model.md](docs/adding_a_model.md) for the pattern) and every feature, fusion strategy and metric applies unchanged.
+
+---
+
 ## Citation
 
-If you use FeatFuse or this benchmark, please cite the paper:
+If FeatFuse or its benchmark results contribute to your research, please cite the paper (or run **`featfuse cite`** — every generated `REPORT.md` and LaTeX table also carries the reference):
 
 ```bibtex
 @article{martinezgil2024graphcodebert,
@@ -166,7 +196,12 @@ If you use FeatFuse or this benchmark, please cite the paper:
 }
 ```
 
-A machine-readable [`CITATION.cff`](CITATION.cff) is included (GitHub shows a "Cite this repository" button). A related follow-up on interpretability is *Augmenting the Interpretability of GraphCodeBERT for Code Similarity Tasks* ([arXiv:2410.05275](https://arxiv.org/abs/2410.05275)).
+To reference the software platform itself (in addition to the paper), `featfuse cite --software` prints a second entry. A machine-readable [`CITATION.cff`](CITATION.cff) is included, so GitHub's "Cite this repository" button works out of the box.
+
+**Related work by the author**
+
+- *Augmenting the Interpretability of GraphCodeBERT for Code Similarity Tasks*, Int. J. of Software Engineering and Knowledge Engineering, 2025. [doi:10.1142/S0218194025500160](https://doi.org/10.1142/S0218194025500160) · [arXiv:2410.05275](https://arxiv.org/abs/2410.05275)
+- *Source code clone detection via an ensemble of unsupervised similarity measures* — [jorge-martinez-gil/ensemble-codesim](https://github.com/jorge-martinez-gil/ensemble-codesim)
 
 ## License
 
