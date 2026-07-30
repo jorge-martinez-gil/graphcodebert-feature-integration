@@ -6,7 +6,6 @@
 
 *Does adding hand-crafted lexical, structural, and execution-based features to a pretrained code transformer actually help? FeatFuse lets you measure it, reproducibly, with one command.*
 
-[![CI](https://github.com/jorge-martinez-gil/graphcodebert-feature-integration/actions/workflows/ci.yml/badge.svg)](https://github.com/jorge-martinez-gil/graphcodebert-feature-integration/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Paper](https://img.shields.io/badge/arXiv-2408.08903-b31b1b.svg)](https://arxiv.org/abs/2408.08903)
