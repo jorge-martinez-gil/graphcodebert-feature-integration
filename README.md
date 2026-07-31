@@ -286,12 +286,3 @@ To reference the software platform itself (in addition to the paper), `featfuse 
 
 Released under the **MIT License**. See [LICENSE](LICENSE).
 
----
-
-<div align="center">
-
-### Star history
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jorge-martinez-gil/graphcodebert-feature-integration&type=Date)](https://star-history.com/#jorge-martinez-gil/graphcodebert-feature-integration&Date)
-
-</div>
